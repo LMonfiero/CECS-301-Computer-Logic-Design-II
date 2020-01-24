@@ -1,0 +1,29 @@
+Command line:
+   cathode_tf_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60624
+
+Mon Mar 04 19:49:04 2019
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 5331.35 Meg
+
+ Total Signals          : 31
+ Total Nets             : 58
+ Total Signal Drivers   : 16
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 20
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 183
+Total Line Count : 48
+
+ Total Simulation Time: 0.15625 sec
+
+ Current Memory Usage: 5331.35 Meg
+
+Mon Mar 04 19:49:10 2019
+

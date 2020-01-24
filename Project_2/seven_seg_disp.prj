@@ -1,0 +1,4 @@
+verilog work "rotator.v"
+verilog work "mux8to1.v"
+verilog work "bit3counter.v"
+verilog work "seven_seg_disp.v"

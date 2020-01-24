@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Testing/quiz2_tf_isim_beh.exe" -prj "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Testing/quiz2_tf_beh.prj" "work.quiz2_tf" "work.glbl" 

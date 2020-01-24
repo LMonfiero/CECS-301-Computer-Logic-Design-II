@@ -1,0 +1,614 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Reading design: TLD.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TLD.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TLD"
+Output Format                      : NGC
+Target Device                      : xc7a100t-2L-csg324
+
+---- Source Options
+Top Module Name                    : TLD
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\pulse.v" into library work
+Parsing module <pulse>.
+Analyzing Verilog file "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\ShiftTenBit.v" into library work
+Parsing module <ShiftTenBit>.
+Analyzing Verilog file "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\PED.v" into library work
+Parsing module <PED>.
+Analyzing Verilog file "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Rotation.v" into library work
+Parsing module <Rotation>.
+Analyzing Verilog file "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Button.v" into library work
+Parsing module <Button>.
+Analyzing Verilog file "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\count32.v" into library work
+Parsing module <count32>.
+Analyzing Verilog file "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Cathode.v" into library work
+Parsing module <Cathode>.
+Analyzing Verilog file "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Multiplexer.v" into library work
+Parsing module <Multiplexer>.
+Analyzing Verilog file "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Hex_7.v" into library work
+Parsing module <Hex_7>.
+Analyzing Verilog file "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Anode.v" into library work
+Parsing module <Anodes>.
+Analyzing Verilog file "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\TLD.v" into library work
+Parsing module <TLD>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TLD>.
+
+Elaborating module <Anodes>.
+
+Elaborating module <Rotation>.
+
+Elaborating module <Hex_7>.
+
+Elaborating module <Multiplexer>.
+
+Elaborating module <Cathode>.
+
+Elaborating module <count32>.
+
+Elaborating module <Button>.
+
+Elaborating module <PED>.
+
+Elaborating module <ShiftTenBit>.
+
+Elaborating module <pulse>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TLD>.
+    Related source file is "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\TLD.v".
+    Summary:
+	no macro.
+Unit <TLD> synthesized.
+
+Synthesizing Unit <Anodes>.
+    Related source file is "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Anode.v".
+    Found 8-bit register for signal <Anode>.
+INFO:Xst:1799 - State 11111111 is never reached in FSM <Anode>.
+    Found finite state machine <FSM_0> for signal <Anode>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 16                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 11111110                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <Anodes> synthesized.
+
+Synthesizing Unit <Rotation>.
+    Related source file is "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Rotation.v".
+    Found 18-bit register for signal <count>.
+    Found 18-bit adder for signal <count[17]_GND_3_o_add_1_OUT> created at line 31.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Rotation> synthesized.
+
+Synthesizing Unit <Hex_7>.
+    Related source file is "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Hex_7.v".
+    Found 16x8-bit Read Only RAM for signal <Ca>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Hex_7> synthesized.
+
+Synthesizing Unit <Multiplexer>.
+    Related source file is "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Multiplexer.v".
+    Found 4-bit 8-to-1 multiplexer for signal <out> created at line 38.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Multiplexer> synthesized.
+
+Synthesizing Unit <Cathode>.
+    Related source file is "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Cathode.v".
+    Found 3-bit register for signal <cath>.
+    Found 3-bit adder for signal <cath[2]_GND_7_o_add_0_OUT> created at line 29.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+Unit <Cathode> synthesized.
+
+Synthesizing Unit <count32>.
+    Related source file is "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\count32.v".
+    Found 32-bit register for signal <q>.
+    Found 32-bit adder for signal <q[31]_GND_8_o_add_0_OUT> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <count32> synthesized.
+
+Synthesizing Unit <Button>.
+    Related source file is "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\Button.v".
+    Summary:
+	no macro.
+Unit <Button> synthesized.
+
+Synthesizing Unit <PED>.
+    Related source file is "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\PED.v".
+    Found 2-bit register for signal <next>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <PED> synthesized.
+
+Synthesizing Unit <ShiftTenBit>.
+    Related source file is "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\ShiftTenBit.v".
+    Found 10-bit register for signal <out>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <ShiftTenBit> synthesized.
+
+Synthesizing Unit <pulse>.
+    Related source file is "C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Project_3\pulse.v".
+    Found 17-bit register for signal <counter>.
+    Found 17-bit adder for signal <counter[16]_GND_12_o_add_1_OUT> created at line 31.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <pulse> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 5
+ 17-bit adder                                          : 1
+ 18-bit adder                                          : 2
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 7
+ 10-bit register                                       : 1
+ 17-bit register                                       : 1
+ 18-bit register                                       : 2
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+# Multiplexers                                         : 4
+ 17-bit 2-to-1 multiplexer                             : 1
+ 18-bit 2-to-1 multiplexer                             : 2
+ 4-bit 8-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Cathode>.
+The following registers are absorbed into counter <cath>: 1 register on signal <cath>.
+Unit <Cathode> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Hex_7>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Ca> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <HexVal>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Ca>            |          |
+    -----------------------------------------------------------------------
+Unit <Hex_7> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Rotation>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Rotation> synthesized (advanced).
+
+Synthesizing (advanced) Unit <count32>.
+The following registers are absorbed into counter <q>: 1 register on signal <q>.
+Unit <count32> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pulse>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <pulse> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 5
+ 17-bit up counter                                     : 1
+ 18-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Multiplexers                                         : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <Anode[1:8]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ 11111110 | 11111110
+ 11111101 | 11111101
+ 11111011 | 11111011
+ 11110111 | 11110111
+ 11101111 | 11101111
+ 11011111 | 11011111
+ 10111111 | 10111111
+ 01111111 | 01111111
+ 11111111 | unreached
+----------------------
+
+Optimizing unit <TLD> ...
+
+Optimizing unit <ShiftTenBit> ...
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_11> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_11> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_12> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_12> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_13> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_13> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_14> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_14> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_15> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_15> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_16> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_16> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_17> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_17> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_0> in Unit <TLD> is equivalent to the following 2 FFs/Latches, which will be removed : <HX/M81/CA/RT1/count_0> <HX/M81/CO/BT/PED1/STB/PULSE/counter_0> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_1> in Unit <TLD> is equivalent to the following 2 FFs/Latches, which will be removed : <HX/M81/CA/RT1/count_1> <HX/M81/CO/BT/PED1/STB/PULSE/counter_1> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_2> in Unit <TLD> is equivalent to the following 2 FFs/Latches, which will be removed : <HX/M81/CA/RT1/count_2> <HX/M81/CO/BT/PED1/STB/PULSE/counter_2> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_3> in Unit <TLD> is equivalent to the following 2 FFs/Latches, which will be removed : <HX/M81/CA/RT1/count_3> <HX/M81/CO/BT/PED1/STB/PULSE/counter_3> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_4> in Unit <TLD> is equivalent to the following 2 FFs/Latches, which will be removed : <HX/M81/CA/RT1/count_4> <HX/M81/CO/BT/PED1/STB/PULSE/counter_4> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_5> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_5> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_6> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_6> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_7> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_7> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_8> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_8> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_9> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_9> 
+INFO:Xst:2261 - The FF/Latch <AN/RT2/count_10> in Unit <TLD> is equivalent to the following FF/Latch, which will be removed : <HX/M81/CA/RT1/count_10> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TLD, actual ratio is 0.
+FlipFlop AN/RT2/count_4 has been replicated 1 time(s)
+FlipFlop AN/RT2/count_5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 87
+ Flip-Flops                                            : 87
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TLD.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 268
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 64
+#      LUT2                        : 1
+#      LUT3                        : 9
+#      LUT4                        : 20
+#      LUT5                        : 7
+#      LUT6                        : 32
+#      MUXCY                       : 64
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 62
+# FlipFlops/Latches                : 87
+#      FDC                         : 35
+#      FDCE                        : 45
+#      FDP                         : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 2
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              87  out of  126800     0%  
+ Number of Slice LUTs:                  136  out of  63400     0%  
+    Number used as Logic:               136  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    145
+   Number with an unused Flip Flop:      58  out of    145    40%  
+   Number with an unused LUT:             9  out of    145     6%  
+   Number of fully used LUT-FF pairs:    78  out of    145    53%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    210     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 87    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.563ns (Maximum Frequency: 390.122MHz)
+   Minimum input arrival time before clock: 0.877ns
+   Maximum output required time after clock: 2.782ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.563ns (frequency: 390.122MHz)
+  Total number of paths / destination ports: 1886 / 131
+-------------------------------------------------------------------------
+Delay:               2.563ns (Levels of Logic = 20)
+  Source:            AN/RT2/count_0 (FF)
+  Destination:       AN/RT2/count_17 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: AN/RT2/count_0 to AN/RT2/count_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.398   0.356  AN/RT2/count_0 (AN/RT2/count_0)
+     INV:I->O              1   0.123   0.000  AN/RT2/Mcount_count_lut<0>_INV_0 (AN/RT2/Mcount_count_lut<0>)
+     MUXCY:S->O            1   0.392   0.000  AN/RT2/Mcount_count_cy<0> (AN/RT2/Mcount_count_cy<0>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<1> (AN/RT2/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<2> (AN/RT2/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<3> (AN/RT2/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<4> (AN/RT2/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<5> (AN/RT2/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<6> (AN/RT2/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<7> (AN/RT2/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<8> (AN/RT2/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<9> (AN/RT2/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<10> (AN/RT2/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<11> (AN/RT2/Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<12> (AN/RT2/Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<13> (AN/RT2/Mcount_count_cy<13>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<14> (AN/RT2/Mcount_count_cy<14>)
+     MUXCY:CI->O           1   0.025   0.000  AN/RT2/Mcount_count_cy<15> (AN/RT2/Mcount_count_cy<15>)
+     MUXCY:CI->O           0   0.025   0.000  AN/RT2/Mcount_count_cy<16> (AN/RT2/Mcount_count_cy<16>)
+     XORCY:CI->O           1   0.417   0.357  AN/RT2/Mcount_count_xor<17> (Result<17>)
+     LUT6:I5->O            1   0.105   0.000  AN/RT2/Mcount_count_eqn_171 (AN/RT2/Mcount_count_eqn_17)
+     FDC:D                     0.015          AN/RT2/count_17
+    ----------------------------------------
+    Total                      2.563ns (1.850ns logic, 0.713ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 88 / 88
+-------------------------------------------------------------------------
+Offset:              0.877ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       HX/M81/CO/BT/PED1/next_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to HX/M81/CO/BT/PED1/next_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            87   0.001   0.479  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.397          HX/M81/CO/BT/PED1/next_0
+    ----------------------------------------
+    Total                      0.877ns (0.398ns logic, 0.479ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 372 / 15
+-------------------------------------------------------------------------
+Offset:              2.782ns (Levels of Logic = 4)
+  Source:            HX/M81/CA/cath_1 (FF)
+  Destination:       Cathode<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: HX/M81/CA/cath_1 to Cathode<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.398   0.843  HX/M81/CA/cath_1 (HX/M81/CA/cath_1)
+     LUT6:I0->O            1   0.105   0.000  HX/M81/Mmux_out_3 (HX/M81/Mmux_out_3)
+     MUXF7:I1->O           7   0.308   0.683  HX/M81/Mmux_out_2_f7 (HX/HexVal<0>)
+     LUT4:I0->O            1   0.105   0.339  HX/Mram_Ca41 (Cathode_4_OBUF)
+     OBUF:I->O                 0.000          Cathode_4_OBUF (Cathode<4>)
+    ----------------------------------------
+    Total                      2.782ns (0.916ns logic, 1.866ns route)
+                                       (32.9% logic, 67.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.563|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.36 secs
+ 
+--> 
+
+Total memory usage is 4654572 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
+

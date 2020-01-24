@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Lab_1\FA8.ncd
+OUTFILE=C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Lab_1\FA8.bit
+FAMILY=Artix7
+PART=xc7a100t-2lcsg324
+WORKINGDIR=C:\Users\louis\Documents\GitHub_Repositories\CECS-301-Computer-Logic-Design-II\Lab_1
+LICENSE=WebPack
+USER_INFO=211678360_0_0_115

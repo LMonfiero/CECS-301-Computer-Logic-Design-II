@@ -1,0 +1,52 @@
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ddr.ucf -p xc7a100t-csg324-2L TLD.ngc TLD.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ddr.ucf -p xc7a100t-csg324-2L TLD.ngc TLD.ngd  
+map -intstyle ise -p xc7a100t-csg324-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TLD_map.ncd TLD.ngd TLD.pcf 
+par -w -intstyle ise -ol high -mt off TLD_map.ncd TLD.ncd TLD.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TLD.twx TLD.ncd -o TLD.twr TLD.pcf -ucf ddr.ucf 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ddr.ucf -p xc7a100t-csg324-2L TLD.ngc TLD.ngd  
+map -intstyle ise -p xc7a100t-csg324-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TLD_map.ncd TLD.ngd TLD.pcf 
+par -w -intstyle ise -ol high -mt off TLD_map.ncd TLD.ncd TLD.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TLD.twx TLD.ncd -o TLD.twr TLD.pcf -ucf ddr.ucf 
+bitgen -intstyle ise -f TLD.ut TLD.ncd 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ddr.ucf -p xc7a100t-csg324-2L TLD.ngc TLD.ngd  
+map -intstyle ise -p xc7a100t-csg324-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TLD_map.ncd TLD.ngd TLD.pcf 
+par -w -intstyle ise -ol high -mt off TLD_map.ncd TLD.ncd TLD.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TLD.twx TLD.ncd -o TLD.twr TLD.pcf -ucf ddr.ucf 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ddr.ucf -p xc7a100t-csg324-2L TLD.ngc TLD.ngd  
+map -intstyle ise -p xc7a100t-csg324-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TLD_map.ncd TLD.ngd TLD.pcf 
+par -w -intstyle ise -ol high -mt off TLD_map.ncd TLD.ncd TLD.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TLD.twx TLD.ncd -o TLD.twr TLD.pcf -ucf ddr.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ddr.ucf -p xc7a100t-csg324-2L TLD.ngc TLD.ngd  
+map -intstyle ise -p xc7a100t-csg324-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TLD_map.ncd TLD.ngd TLD.pcf 
+par -w -intstyle ise -ol high -mt off TLD_map.ncd TLD.ncd TLD.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TLD.twx TLD.ncd -o TLD.twr TLD.pcf -ucf ddr.ucf 
+bitgen -intstyle ise -f TLD.ut TLD.ncd 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ddr.ucf -p xc7a100t-csg324-2L TLD.ngc TLD.ngd  
+map -intstyle ise -p xc7a100t-csg324-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TLD_map.ncd TLD.ngd TLD.pcf 
+par -w -intstyle ise -ol high -mt off TLD_map.ncd TLD.ncd TLD.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TLD.twx TLD.ncd -o TLD.twr TLD.pcf -ucf ddr.ucf 
+bitgen -intstyle ise -f TLD.ut TLD.ncd 
+xst -intstyle ise -ifn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.xst" -ofn "C:/Users/louis/Documents/GitHub_Repositories/CECS-301-Computer-Logic-Design-II/Project_3/TLD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ddr.ucf -p xc7a100t-csg324-2L TLD.ngc TLD.ngd  
+map -intstyle ise -p xc7a100t-csg324-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TLD_map.ncd TLD.ngd TLD.pcf 
+par -w -intstyle ise -ol high -mt off TLD_map.ncd TLD.ncd TLD.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TLD.twx TLD.ncd -o TLD.twr TLD.pcf -ucf ddr.ucf 
+bitgen -intstyle ise -f TLD.ut TLD.ncd 

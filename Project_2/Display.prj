@@ -1,0 +1,7 @@
+verilog work "rotator.v"
+verilog work "count32.v"
+verilog work "cathode.v"
+verilog work "mux8to1.v"
+verilog work "Hex7Seg.v"
+verilog work "anodes.v"
+verilog work "Display.v"
